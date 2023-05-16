@@ -2,7 +2,7 @@
   <div class="main-app-wrap">
     <Header/>
     <div class="main-wrap row h-100">
-      <div class="main-sidebar col-2 border">
+      <div class="main-sidebar col-2">
         <Sidebar/>
       </div>
 
@@ -47,4 +47,9 @@ export default {
 //    }
 //  }
 //}
+.main-sidebar {
+  -webkit-box-shadow: 0px 6px 21px 0px rgba(34, 60, 80, 0.15);
+  -moz-box-shadow: 0px 6px 21px 0px rgba(34, 60, 80, 0.15);
+  box-shadow: 0px 6px 21px 0px rgba(34, 60, 80, 0.15);
+}
 </style>
