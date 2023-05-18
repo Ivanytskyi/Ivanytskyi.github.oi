@@ -1,17 +1,29 @@
 module.exports = {
   root: true,
+  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended'],
   env: {
-    node: true
+    es6: true,
+    node: true,
+    browser: true
   },
-  'extends': [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended'
-  ],
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: 'babel-eslint',
+    sourceType: 'module'
   },
   rules: {
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'vue/multi-word-component-names': 'off',
+    'object-curly-spacing': [2, 'always'],
+    'arrow-spacing': [2, { before: true, after: true }],
+    'block-spacing': [2, 'always'],
+    'comma-spacing': [2, { before: false, after: true }],
+    'key-spacing': [2, { beforeColon: false, afterColon: true }],
+    'comma-dangle': [2, 'never'],
+    'comma-style': [2, 'last'],
+    'brace-style': [2, '1tbs', { allowSingleLine: true }],
+    camelcase: [2, { properties: 'never' }],
+    quotes: [2, 'single', { avoidEscape: true, allowTemplateLiterals: true }],
+    indent: [2, 2, { SwitchCase: 1 }],
+    curly: [2, 'multi-line'],
+    semi: [2, 'never']
   }
 }
