@@ -10,4 +10,4 @@ app.config.globalProperties.$moment=moment
 
 app.use(store).use(router).use(moment).mount('#app')
 
-import "bootstrap/dist/js/bootstrap.js"
+import 'bootstrap/dist/js/bootstrap.js'
