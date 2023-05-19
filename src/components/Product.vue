@@ -1,18 +1,18 @@
 <template>
   <div class="product-wrap border row bg-light">
-    <div class="product-name col product-content-centered text-decoration-underline">
+    <div class="product-name col product-content-centered text-decoration-underline ">
       <p>
         {{ product.title }}
       </p>
     </div>
 
-    <div class="product-type col product-content-centered">
+    <div class="product-type col product-content-centered ">
       <p>
         {{ product.type }}
       </p>
     </div>
 
-    <div class="product-guarantee col product-content-centered row fw-bold">
+    <div class="product-guarantee col product-content-centered row fw-bold ">
       <p>
         <span class="fw-normal text-secondary">c</span> {{ $moment(product.guarantee.start).format("MMM Do YY") }}
       </p>
@@ -39,7 +39,7 @@
       </p>
     </div>
 
-    <div class="product-order col product-content-centered text-decoration-underline">
+    <div class="product-order col product-content-centered text-decoration-underline overflow-scroll">
       <p>
         {{ product.order }}
       </p>
@@ -93,4 +93,7 @@ export default {
 .secondary-date {
   font-size: 13px;
 }
+
+.product-order::-webkit-scrollbar { width: 0; }
+
 </style>

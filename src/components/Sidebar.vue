@@ -19,28 +19,13 @@
     <div class="sidebar-links">
       <ul class="sidebar-links-wrap p-0">
         <li>
-          <router-link to="#">
+          <router-link to="/orders">
             ПРИХОД
-          </router-link>
-        </li>
-        <li>
-          <router-link to="#">
-            ГРУППЫ
           </router-link>
         </li>
         <li>
           <router-link to="/products">
             ПРОДУКТЫ
-          </router-link>
-        </li>
-        <li>
-          <router-link to="#">
-            ПОЛЬЗОВАТЕЛИ
-          </router-link>
-        </li>
-        <li>
-          <router-link to="#">
-            НАСТРОЙКИ
           </router-link>
         </li>
       </ul>

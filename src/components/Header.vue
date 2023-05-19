@@ -73,6 +73,11 @@
 import moment from 'moment'
 
 export default {
+  data() {
+    return {
+      activeSessions: 0
+    }
+  },
   computed: {
     getDayMonthYear() {
       return (
