@@ -1,24 +1,24 @@
 # orders-products
+Проект разработан в соответствии с тех. заданием под разрешение экрана FullHD
+Реализован функционал, который прописан в тех. задании
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
+## Переходим в папку с проектом
 ```
-npm run serve
+cd orders-products
 ```
 
-### Compiles and minifies for production
+## Собираем образ Docker для нашего приложения на Vue.js:
+```
+docker build -t vuejs-cookbook/dockerize-vuejs-app .
+```
+
+### Собираем проект
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### Запускаем наше приложение Vue.js в контейнере Docker:
 ```
-npm run lint
+docker run -it -p 8080:8080 --rm --name dockerize-vuejs-app-1 vuejs-cookbook/dockerize-vuejs-app
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
