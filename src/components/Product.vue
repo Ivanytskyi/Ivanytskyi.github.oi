@@ -1,18 +1,18 @@
 <template>
   <div class="product-wrap border row bg-light">
-    <div class="product-name col product-content-centered text-decoration-underline">
+    <div class="product-name col product-content-centered text-decoration-underline border">
       <p>
         {{ product.title }}
       </p>
     </div>
 
-    <div class="product-type col product-content-centered">
+    <div class="product-type col product-content-centered border">
       <p>
         {{ product.type }}
       </p>
     </div>
 
-    <div class="product-guarantee col product-content-centered row fw-bold">
+    <div class="product-guarantee col product-content-centered row fw-bold border">
       <p>
         <span class="fw-normal text-secondary">c</span> {{ $moment(product.guarantee.start).format("MMM Do YY") }}
       </p>
@@ -30,7 +30,7 @@
       </p>
     </div>
 
-    <div class="product-price col product-content-centered row">
+    <div class="product-price col product-content-centered row border">
       <p
         v-for="item in product.price"
         :key="item"
@@ -39,13 +39,13 @@
       </p>
     </div>
 
-    <div class="product-order col product-content-centered text-decoration-underline">
+    <div class="product-order col product-content-centered text-decoration-underline border overflow-scroll">
       <p>
         {{ product.order }}
       </p>
     </div>
 
-    <div class="col  product-content-centered">
+    <div class="col  product-content-centered border">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
@@ -93,4 +93,7 @@ export default {
 .secondary-date {
   font-size: 13px;
 }
+
+.product-order::-webkit-scrollbar { width: 0; }
+
 </style>

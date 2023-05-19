@@ -30,14 +30,16 @@
       </div>
     </div>
 
-    <div
-      v-for="item in filteredItems"
-      :key="item.type"
-      class="pt-4"
-    >
-      <Product
-        :product="item"
-      />
+    <div class="products-list-scroll">
+      <div
+        v-for="item in filteredItems"
+        :key="item.type"
+        class="pt-4"
+      >
+        <Product
+          :product="item"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -47,7 +49,7 @@ import store from '../store'
 import Product from '../components/Product'
 
 export default {
-  name: 'Home',
+  name: 'Products',
   components: { Product },
   
   data() {
@@ -101,4 +103,11 @@ export default {
 .products-wrap-header-text {
   line-height: 42px;
 }
+
+.products-list-scroll {
+  height: 830px;
+  overflow: scroll;
+}
+
+.products-list-scroll::-webkit-scrollbar { width: 0; }
 </style>
