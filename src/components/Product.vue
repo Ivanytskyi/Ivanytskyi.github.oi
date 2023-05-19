@@ -1,18 +1,18 @@
 <template>
   <div class="product-wrap border row bg-light">
-    <div class="product-name col product-content-centered text-decoration-underline border">
+    <div class="product-name col product-content-centered text-decoration-underline">
       <p>
         {{ product.title }}
       </p>
     </div>
 
-    <div class="product-type col product-content-centered border">
+    <div class="product-type col product-content-centered">
       <p>
         {{ product.type }}
       </p>
     </div>
 
-    <div class="product-guarantee col product-content-centered row fw-bold border">
+    <div class="product-guarantee col product-content-centered row fw-bold">
       <p>
         <span class="fw-normal text-secondary">c</span> {{ $moment(product.guarantee.start).format("MMM Do YY") }}
       </p>
@@ -30,7 +30,7 @@
       </p>
     </div>
 
-    <div class="product-price col product-content-centered row border">
+    <div class="product-price col product-content-centered row">
       <p
         v-for="item in product.price"
         :key="item"
@@ -39,13 +39,13 @@
       </p>
     </div>
 
-    <div class="product-order col product-content-centered text-decoration-underline border overflow-scroll">
+    <div class="product-order col product-content-centered text-decoration-underline overflow-scroll">
       <p>
         {{ product.order }}
       </p>
     </div>
 
-    <div class="col  product-content-centered border">
+    <div class="col  product-content-centered">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

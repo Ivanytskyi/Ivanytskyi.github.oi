@@ -24,7 +24,7 @@
               >
                 <div
                   v-if="!active"
-                  class="product-name col-5 product-content-centered text-decoration-underline border overflow-scroll"
+                  class="product-name col-5 product-content-centered text-decoration-underline overflow-scroll"
                 >
                   <p>
                     {{ order.title }}
@@ -32,7 +32,7 @@
                 </div>
 
                 <div
-                  class="order-product-list col border row"
+                  class="order-product-list col row"
                   @click="active = true, getBlockOfProducts(order)"
                 >
                   <div class="col-4 pe-0 product-content-centered">
@@ -65,7 +65,7 @@
                   </div>
                 </div>
 
-                <div class="order-date col product-content-centered fw-bold border p-0">
+                <div class="order-date col product-content-centered fw-bold p-0">
                   <div class="row">
                     <p>
                       {{ $moment(order.date).format("MMM Do YY") }}
@@ -95,7 +95,7 @@
 
                 <div
                   v-if="!active"
-                  class="order-price col-2 product-content-centered row fw-bold border"
+                  class="order-price col-2 product-content-centered row fw-bold"
                 >
                   <p>
                     {{ getTotalOrderAmount(0, order) }} $
@@ -108,7 +108,7 @@
 
                 <div
                   v-if="!active"
-                  class="col-1  product-content-centered border"
+                  class="col-1  product-content-centered"
                 >
                   <button
                     type="button"

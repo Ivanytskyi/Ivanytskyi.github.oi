@@ -1,5 +1,5 @@
 <template>
-  <div class="info-block bg-light">
+  <div class="info-block bg-light rounded-3">
     <h3 class="p-4">
       {{ order.title }}
     </h3>
@@ -18,8 +18,9 @@
     </p>
 
     <div class="product-list">
-      <div
+      <div 
         v-for="product in order.products"
+        :key="product.id"
         class="row border-bottom border-top pt-3"
       >
         <div class="col-10">
