@@ -22,3 +22,9 @@ npm run build
 ```
 docker run -it -p 8080:8080 --rm --name dockerize-vuejs-app-1 vuejs-cookbook/dockerize-vuejs-app
 ```
+
+### Скрины приложения
+
+<img width="1680" alt="image" src="https://github.com/Ivanytskyi/orders-products/assets/86095425/c473c0a2-ec27-4397-9d92-43f30329ab21">
+<img width="1435" alt="image" src="https://github.com/Ivanytskyi/orders-products/assets/86095425/71e578e1-520d-417d-9759-d71a9dbf9fb3">
+<img width="1680" alt="image" src="https://github.com/Ivanytskyi/orders-products/assets/86095425/0be31eab-5ec2-43a4-80fe-c60fc5ac0353">
